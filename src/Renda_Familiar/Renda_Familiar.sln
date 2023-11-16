@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renda_Familiar", "Renda_Familiar\Renda_Familiar.csproj", "{DF0FCAD1-DA7F-4C88-BAEC-6624B15FED19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF0FCAD1-DA7F-4C88-BAEC-6624B15FED19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0FCAD1-DA7F-4C88-BAEC-6624B15FED19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0FCAD1-DA7F-4C88-BAEC-6624B15FED19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0FCAD1-DA7F-4C88-BAEC-6624B15FED19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C894F31-ACD9-41A5-865E-E237E7EE17CD}
+	EndGlobalSection
+EndGlobal
