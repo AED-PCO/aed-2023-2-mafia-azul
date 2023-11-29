@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1380848\\Desktop\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Renda_Familiar.csproj",
+      "projectUniqueName": "C:\\Users\\1380848\\Desktop\\Trabalho Final\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Renda_Familiar.csproj",
       "projectName": "Renda_Familiar",
-      "projectPath": "C:\\Users\\1380848\\Desktop\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Renda_Familiar.csproj",
+      "projectPath": "C:\\Users\\1380848\\Desktop\\Trabalho Final\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Renda_Familiar.csproj",
       "packagesPath": "C:\\Users\\1380848\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1380848\\Desktop\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\obj\\",
+      "outputPath": "C:\\Users\\1380848\\Desktop\\Trabalho Final\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\1380848\\AppData\\Roaming\\NuGet\\NuGet.Config",
