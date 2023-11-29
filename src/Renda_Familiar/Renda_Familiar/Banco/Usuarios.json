@@ -1,6 +1,9 @@
 {
-  "codigoFamilia": "123",
+  "ID": "123",
   "login": "Matheus",
   "senha": "123",
-  "usuario": "Matheus"
+  "usuario": "Matheus",
+  "Nome": "Matheus Canuto",
+  "Data_de_nascimento": "18/02/2000",
+  "Saldo": 0.0
 }
