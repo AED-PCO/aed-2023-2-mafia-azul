@@ -1,9 +1,29 @@
-{
-  "ID": "123",
-  "login": "Matheus",
-  "senha": "123",
-  "usuario": "Matheus",
-  "Nome": "Matheus Canuto",
-  "Data_de_nascimento": "18/02/2000",
-  "Saldo": 0.0
-}
+[
+  {
+    "ID": "123",
+    "login": "Matheus",
+    "senha": "123",
+    "usuario": "Matheus",
+    "Nome": "Matheus Canuto",
+    "Data_de_nascimento": "18/02/2000",
+    "Saldo": 0.0
+  },
+  {
+    "ID": "456",
+    "login": "Joao",
+    "senha": "456",
+    "usuario": "Joao",
+    "Nome": "Joao Silva",
+    "Data_de_nascimento": "25/07/1995",
+    "Saldo": 100.0
+  },
+  {
+    "ID": "789",
+    "login": "Maria",
+    "senha": "789",
+    "usuario": "Maria",
+    "Nome": "Maria Oliveira",
+    "Data_de_nascimento": "10/11/1988",
+    "Saldo": 50.0
+  }
+]

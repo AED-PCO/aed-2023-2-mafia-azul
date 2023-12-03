@@ -32,3 +32,5 @@ E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Deb
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.pdb
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.genruntimeconfig.cache
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\ref\Renda_Familiar.dll
+E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Cadastro.resources
+E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Login.resources
