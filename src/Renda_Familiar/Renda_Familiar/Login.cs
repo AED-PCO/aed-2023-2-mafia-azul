@@ -38,10 +38,17 @@ namespace Renda_Familiar
             InitializeComponent();
             Usuarios u = new Usuarios();
             
-            string teste = File.ReadAllText("E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.txt");
-            teste = JsonConvert.SerializeObject(teste, Formatting.Indented);
-
-            var usu  = JsonConvert.DeserializeObject<Usuarios>(teste);
+            string teste = File.ReadAllText("E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.json");
+            //Como tem mais de um usuario é uma lista
+            List<Usuarios> usu  = JsonConvert.DeserializeObject<List<Usuarios>>(teste)
+            //usu.Remove(usu[0]);
+            //Remove todos que atenderem a condição
+            //usu.RemoveAll(x => x.ID == 2);
+            //Remove só um
+            //usu.Remove(usu.FirstOrDefault(x => x.ID == 2));
+            //Serializar = transformar um json ou arquivo de texto em objeto
+            //Deserializar = Transformar json em objeto no sistema
+            Console.WriteLine(usu);
             //usu[0].ID;
         }
 
