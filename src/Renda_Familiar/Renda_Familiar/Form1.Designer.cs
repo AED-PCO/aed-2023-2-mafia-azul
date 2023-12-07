@@ -47,6 +47,8 @@
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             modoNoturno = new CheckBox();
+            linkLabel1 = new LinkLabel();
+            label9 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -104,7 +106,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Roboto", 24F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(616, 45);
+            label5.Location = new Point(23, 116);
             label5.Name = "label5";
             label5.Size = new Size(195, 38);
             label5.TabIndex = 6;
@@ -116,7 +118,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Roboto", 24F, FontStyle.Regular, GraphicsUnit.Point);
             label6.ForeColor = SystemColors.ControlLightLight;
-            label6.Location = new Point(817, 45);
+            label6.Location = new Point(391, 116);
             label6.Name = "label6";
             label6.Size = new Size(135, 38);
             label6.TabIndex = 7;
@@ -213,7 +215,7 @@
             groupBox1.Controls.Add(radioButton2);
             groupBox1.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox1.ForeColor = SystemColors.ControlLightLight;
-            groupBox1.Location = new Point(23, 138);
+            groupBox1.Location = new Point(23, 186);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(503, 189);
             groupBox1.TabIndex = 20;
@@ -228,7 +230,7 @@
             groupBox2.Controls.Add(label4);
             groupBox2.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox2.ForeColor = SystemColors.ControlLightLight;
-            groupBox2.Location = new Point(558, 138);
+            groupBox2.Location = new Point(558, 186);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(483, 189);
             groupBox2.TabIndex = 21;
@@ -239,7 +241,7 @@
             // 
             groupBox3.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox3.ForeColor = SystemColors.ControlLightLight;
-            groupBox3.Location = new Point(23, 347);
+            groupBox3.Location = new Point(23, 395);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(1018, 225);
             groupBox3.TabIndex = 22;
@@ -248,8 +250,9 @@
             // 
             // modoNoturno
             // 
-            modoNoturno.Checked = true;
             modoNoturno.AutoSize = true;
+            modoNoturno.Checked = true;
+            modoNoturno.CheckState = CheckState.Checked;
             modoNoturno.ForeColor = SystemColors.ButtonHighlight;
             modoNoturno.Location = new Point(937, 782);
             modoNoturno.Name = "modoNoturno";
@@ -259,12 +262,36 @@
             modoNoturno.UseVisualStyleBackColor = true;
             modoNoturno.CheckedChanged += modoNoturno_CheckedChanged;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            linkLabel1.Location = new Point(23, 782);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(37, 21);
+            linkLabel1.TabIndex = 24;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Sair";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Roboto", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.Transparent;
+            label9.Location = new Point(536, 42);
+            label9.Name = "label9";
+            label9.Size = new Size(505, 44);
+            label9.TabIndex = 25;
+            label9.Text = "Bem vindo Matheus Canuto!";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1053, 813);
+            Controls.Add(label9);
+            Controls.Add(linkLabel1);
             Controls.Add(modoNoturno);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
@@ -302,6 +329,7 @@
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         public CheckBox modoNoturno;
-        
+        private LinkLabel linkLabel1;
+        private Label label9;
     }
 }

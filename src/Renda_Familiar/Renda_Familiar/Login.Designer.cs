@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            linkLabel1 = new LinkLabel();
             textBox2 = new TextBox();
             label1 = new Label();
             textBox1 = new TextBox();
@@ -40,6 +41,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(linkLabel1);
             groupBox1.Controls.Add(textBox2);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(textBox1);
@@ -49,10 +51,22 @@
             groupBox1.ForeColor = SystemColors.ControlLightLight;
             groupBox1.Location = new Point(157, 125);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(503, 194);
+            groupBox1.Size = new Size(503, 219);
             groupBox1.TabIndex = 21;
             groupBox1.TabStop = false;
             groupBox1.Text = "Login";
+            // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Roboto", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel1.Location = new Point(197, 126);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(103, 19);
+            linkLabel1.TabIndex = 18;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Cadastre-se";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // textBox2
             // 
@@ -81,6 +95,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(226, 19);
             textBox1.TabIndex = 11;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button1
             // 
@@ -88,7 +103,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Roboto", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(156, 137);
+            button1.Location = new Point(154, 162);
             button1.Name = "button1";
             button1.Size = new Size(207, 31);
             button1.TabIndex = 15;
@@ -148,5 +163,6 @@
         private TextBox textBox2;
         private Label label1;
         public CheckBox modoNoturno;
+        private LinkLabel linkLabel1;
     }
 }

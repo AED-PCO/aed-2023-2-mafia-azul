@@ -35,4 +35,4 @@ E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Deb
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Cadastro.resources
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.csproj.CopyComplete
-E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Usuarios.resources
+E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Login.resources

@@ -6,30 +6,21 @@ using System.Threading.Tasks;
 
 namespace Renda_Familiar
 {
-    public class Pessoa
+    public class Usuarios
     {
-        public string ID { get; set; }
-        public string login;
-        public string senha;
-        public string usuario;
-        public string Nome;
-        public string Data_de_nascimento;
-        public float Saldo;
-        public void debito(float valor)
-        {
-            this.Saldo = this.Saldo - valor;
-        }
-        public void credito(float valor)
-        {
-            this.Saldo = this.Saldo + valor;
-        }
+        public int ID { get; set; }
+        public string senha { get; set; }
+        public string usuario { get; set; }
+        public string nome { get; set; }
+        public string data_de_nascimento { get; set; }
+        public float saldo { get; set; }
+        public List<Transacao> transacoes { get; set; }
     }
     public class Transacao
     {
-        public string nome;
+        public string tipo;
         public string data;
-        public string valor;
-        public string idUsuario;
-
+        public float valor;
+        public int ID;
     }
 }

@@ -1,29 +1,24 @@
 [
   {
-    "ID": 1,
-    "login": "usuario123",
-    "senha": "senha123",
-    "usuario": "fulano",
-    "Nome": "Fulano de Tal",
-    "Data_de_nascimento": "1990-01-01",
-    "Saldo": 1000.50
-  },
-  {
-    "ID": 2,
-    "login": "joao99",
-    "senha": "abcXYZ",
-    "usuario": "joao",
-    "Nome": "João Silva",
-    "Data_de_nascimento": "1985-05-15",
-    "Saldo": 500.75
-  },
-  {
-    "ID": 3,
-    "login": "maria_22",
-    "senha": "senhaMaria",
-    "usuario": "maria",
-    "Nome": "Maria Oliveira",
-    "Data_de_nascimento": "1998-11-30",
-    "Saldo": 1200.30
+    "ID": 5,
+    "senha": "123456",
+    "usuario": "pedro.machado",
+    "nome": "Pedro Machado",
+    "data_de_nascimento": "1988-12-05",
+    "saldo": 1200.0,
+    "transacoes": [
+      {
+        "tipo": "Receita",
+        "data": "21/06/2015",
+        "valor": 200.30,
+        "ID": 202
+      },
+      {
+        "tipo": "Despesa",
+        "data": "21/06/2015",
+        "valor": 21.30,
+        "ID": 203
+      }
+    ]
   }
 ]

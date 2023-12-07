@@ -21,35 +21,11 @@ using System.Security.Principal;
 
 namespace Renda_Familiar
 {
-    public class Usuarios
-    {
-        public int ID { get; set; }
-        public string login { get; set; }
-        public string senha { get; set; }
-        public string usuario { get; set; }
-        public string Nome { get; set; }
-        public string Data_de_nascimento { get; set; }
-        public float Saldo { get; set; }
-    }
     public partial class Login : Form
     {
         public Login()
         {
             InitializeComponent();
-            Usuarios u = new Usuarios();
-            
-            string teste = File.ReadAllText("E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.json");
-            //Como tem mais de um usuario é uma lista
-            List<Usuarios> usu  = JsonConvert.DeserializeObject<List<Usuarios>>(teste)
-            //usu.Remove(usu[0]);
-            //Remove todos que atenderem a condição
-            //usu.RemoveAll(x => x.ID == 2);
-            //Remove só um
-            //usu.Remove(usu.FirstOrDefault(x => x.ID == 2));
-            //Serializar = transformar um json ou arquivo de texto em objeto
-            //Deserializar = Transformar json em objeto no sistema
-            Console.WriteLine(usu);
-            //usu[0].ID;
         }
 
         private void modoNoturno_CheckedChanged(object sender, EventArgs e)
@@ -81,11 +57,51 @@ namespace Renda_Familiar
 
         public void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new ();
-            form1.Show();
+            Usuarios u = new Usuarios();
+            string teste = File.ReadAllText("E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.json");
+            //Como tem mais de um usuario é uma lista
+            List<Usuarios> usu = JsonConvert.DeserializeObject<List<Usuarios>>(teste);
+            //usu.Remove(usu[0]);
+            //Remove todos que atenderem a condição
+            //usu.RemoveAll(x => x.ID == 2);
+            //Remove só um
+            //usu.Remove(usu.FirstOrDefault(x => x.ID == 2));
+            //Serializar = transformar um json ou arquivo de texto em objeto
+            //Deserializar = Transformar json em objeto no sistema
+            //Console.WriteLine(usu);
+            //usu[0].ID;
+            bool aces = false;
+            foreach (Usuarios usuario in usu)
+            {
+                if (usuario.usuario == textBox1.Text && usuario.senha == textBox2.Text)
+                {
+                    Usuarios usuarioCerto = usuario;
+                    aces = true;
+                    MessageBox.Show("Login Efetuado com sucesso!", "Sucesso", MessageBoxButtons.OK);
+                    this.Hide();
+                    Form1 form1 = new Form1(usu, usuarioCerto);
+                    form1.Show();
+                }
+            }
+            if (!aces)
+            {
+                MessageBox.Show("Digite um login e usuario válido!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Cadastro formCadastro = new Cadastro();
+            this.Hide();
+            formCadastro.Show();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

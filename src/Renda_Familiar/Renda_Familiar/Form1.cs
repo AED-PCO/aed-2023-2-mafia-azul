@@ -2,9 +2,10 @@ namespace Renda_Familiar
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(List<Usuarios> usu, Usuarios u)
         {
             InitializeComponent();
+            label9.Text = "Bem vindo(a)" + u.nome.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -14,7 +15,7 @@ namespace Renda_Familiar
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -48,7 +49,7 @@ namespace Renda_Familiar
         }
         private void modoNoturno_CheckedChanged(object sender, EventArgs e)
         {
-            if(modoNoturno.Checked)
+            if (modoNoturno.Checked)
             {
                 BackColor = Color.Black;
             }
