@@ -30,6 +30,7 @@
         /// </summary>
         public void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label2 = new Label();
             label1 = new Label();
             label3 = new Label();
@@ -46,11 +47,15 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
+            listBox1 = new ListBox();
             modoNoturno = new CheckBox();
             linkLabel1 = new LinkLabel();
             label9 = new Label();
+            transacaoBindingSource = new BindingSource(components);
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)transacaoBindingSource).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -239,6 +244,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(listBox1);
             groupBox3.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox3.ForeColor = SystemColors.ControlLightLight;
             groupBox3.Location = new Point(23, 395);
@@ -247,6 +253,18 @@
             groupBox3.TabIndex = 22;
             groupBox3.TabStop = false;
             groupBox3.Text = "Extrato";
+            // 
+            // listBox1
+            // 
+            listBox1.BackColor = SystemColors.Desktop;
+            listBox1.BorderStyle = BorderStyle.None;
+            listBox1.ForeColor = Color.White;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 23;
+            listBox1.Location = new Point(6, 29);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(1006, 184);
+            listBox1.TabIndex = 0;
             // 
             // modoNoturno
             // 
@@ -284,6 +302,10 @@
             label9.TabIndex = 25;
             label9.Text = "Bem vindo Matheus Canuto!";
             // 
+            // transacaoBindingSource
+            // 
+            transacaoBindingSource.DataSource = typeof(Transacao);
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -307,6 +329,8 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)transacaoBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -331,5 +355,7 @@
         public CheckBox modoNoturno;
         private LinkLabel linkLabel1;
         private Label label9;
+        private ListBox listBox1;
+        private BindingSource transacaoBindingSource;
     }
 }

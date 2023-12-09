@@ -23,13 +23,14 @@ namespace Renda_Familiar
         public float valor;
         public int ID;
     }
-    public class caminho
+    public class Caminho
     {
         public string geraCaminho()
         {
-            string diretorioExecutavel = AppDomain.CurrentDomain.BaseDirectory;
-            string caminhoArquivo = Path.Combine(diretorioExecutavel, "Usuarios.json");
-            return caminhoArquivo;
+            string caminhoArquivo = "Banco\\Usuarios.json";
+            string caminhoCompleto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, caminhoArquivo);
+
+            return caminhoCompleto;
         }
     }
 }

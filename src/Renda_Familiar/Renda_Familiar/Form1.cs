@@ -5,7 +5,29 @@ namespace Renda_Familiar
         public Form1(List<Usuarios> usu, Usuarios u)
         {
             InitializeComponent();
-            label9.Text = "Bem vindo(a)" + u.nome.ToString();
+
+            atualizaValores(u);
+        }
+
+        public void atualizaValores(Usuarios u)
+        {
+            label9.Text = "Bem vindo (a)" + u.nome;
+            float saldoAtual = 0;
+
+            listBox1.Items.Add("|     ID     | ------- |      TIPO       | -------- |        DATA       | --------------- |       VALOR      |");
+            foreach (Transacao tra in u.transacoes)
+            {
+                listBox1.Items.Add("|    " + tra.ID.ToString() + "   |         |      " + tra.tipo.ToString() + "   |           |     " + tra.data.ToString() + "   |   " + tra.valor.ToString() + "    |");
+                if(tra.tipo == "Receita")
+                {
+                    saldoAtual += tra.valor;
+                }
+                else
+                {
+                    saldoAtual -= tra.valor;
+                }
+            }
+            label6.Text = saldoAtual.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,5 +81,20 @@ namespace Renda_Familiar
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
