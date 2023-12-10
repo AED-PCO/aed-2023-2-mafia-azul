@@ -36,3 +36,24 @@ E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Deb
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.csproj.CopyComplete
 E:\Trabalhos Puc\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Login.resources
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Renda_Familiar.exe
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Renda_Familiar.deps.json
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Renda_Familiar.runtimeconfig.json
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Renda_Familiar.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Renda_Familiar.pdb
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.csproj.AssemblyReference.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Cadastro.resources
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Form1.resources
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.Login.resources
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.csproj.GenerateResource.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.AssemblyInfoInputs.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.AssemblyInfo.cs
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.csproj.CoreCompileInputs.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.csproj.CopyComplete
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\refint\Renda_Familiar.dll
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.pdb
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\Renda_Familiar.genruntimeconfig.cache
+C:\Cursos\Sistema de inforção\Disciplinas\AED\Trabalho_Final_Renda_Familiar\aed-2023-2-mafia-azul\src\Renda_Familiar\Renda_Familiar\obj\Debug\net6.0-windows\ref\Renda_Familiar.dll
