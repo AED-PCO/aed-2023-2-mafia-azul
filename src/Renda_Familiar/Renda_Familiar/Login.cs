@@ -58,7 +58,9 @@ namespace Renda_Familiar
         public void button1_Click(object sender, EventArgs e)
         {
             Usuarios u = new Usuarios();
-            string teste = File.ReadAllText("E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.json");
+            // Agora, 'caminhoCompleto' contém o caminho do arquivo independentemente do diretório de execução.
+            Caminho caminho = new Caminho();
+            string teste = File.ReadAllText(caminho.geraCaminho());
             //Como tem mais de um usuario é uma lista
             List<Usuarios> usu = JsonConvert.DeserializeObject<List<Usuarios>>(teste);
             //usu.Remove(usu[0]);

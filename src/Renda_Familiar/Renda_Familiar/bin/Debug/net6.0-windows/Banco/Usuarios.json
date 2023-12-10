@@ -1,0 +1,157 @@
+[
+  {
+    "ID": 5,
+    "senha": "teste",
+    "usuario": "teste",
+    "nome": "Pedro Machado",
+    "data_de_nascimento": "1988-12-05",
+    "saldo": 0,
+    "transacoes": [
+      {
+        "tipo": "Receita",
+        "data": "21/06/2015",
+        "valor": 200.3,
+        "ID": 202
+      },
+      {
+        "tipo": "Despesa",
+        "data": "21/06/2015",
+        "valor": 21.3,
+        "ID": 203
+      },
+      {
+        "tipo": "Receita",
+        "data": "15/09/2015",
+        "valor": 150.0,
+        "ID": 216
+      },
+      {
+        "tipo": "Despesa",
+        "data": "15/09/2015",
+        "valor": 30.5,
+        "ID": 217
+      },
+      {
+        "tipo": "Receita",
+        "data": "10/03/2016",
+        "valor": 300.5,
+        "ID": 218
+      },
+      {
+        "tipo": "Despesa",
+        "data": "10/03/2016",
+        "valor": 40.0,
+        "ID": 219
+      },
+      {
+        "tipo": "Receita",
+        "data": "25/11/2016",
+        "valor": 250.0,
+        "ID": 220
+      },
+      {
+        "tipo": "Despesa",
+        "data": "25/11/2016",
+        "valor": 15.2,
+        "ID": 221
+      },
+      {
+        "tipo": "Receita",
+        "data": "08/07/2017",
+        "valor": 180.0,
+        "ID": 222
+      },
+      {
+        "tipo": "Despesa",
+        "data": "08/07/2017",
+        "valor": 20.0,
+        "ID": 223
+      }
+    ]
+    
+  },
+  {
+    "ID": 7,
+    "senha": "xyz123",
+    "usuario": "maria.rodrigues",
+    "nome": "Maria Rodrigues",
+    "data_de_nascimento": "1985-04-20",
+    "saldo": 2500.0,
+    "transacoes": [
+      {
+        "tipo": "Receita",
+        "data": "03/11/2020",
+        "valor": 500.8,
+        "ID": 207
+      },
+      {
+        "tipo": "Despesa",
+        "data": "03/11/2020",
+        "valor": 80.0,
+        "ID": 208
+      },
+      {
+        "tipo": "Receita",
+        "data": "15/02/2022",
+        "valor": 700.0,
+        "ID": 209
+      }
+    ]
+  },
+  {
+    "ID": 8,
+    "senha": "p@ssw0rd",
+    "usuario": "ricardo.almeida",
+    "nome": "Ricardo Almeida",
+    "data_de_nascimento": "1990-09-12",
+    "saldo": 1800.0,
+    "transacoes": [
+      {
+        "tipo": "Receita",
+        "data": "18/07/2017",
+        "valor": 300.5,
+        "ID": 210
+      },
+      {
+        "tipo": "Despesa",
+        "data": "18/07/2017",
+        "valor": 50.0,
+        "ID": 211
+      },
+      {
+        "tipo": "Receita",
+        "data": "25/03/2019",
+        "valor": 400.0,
+        "ID": 212
+      }
+    ]
+  },
+  {
+    "ID": 9,
+    "senha": "qwe789",
+    "usuario": "lucia.fernandes",
+    "nome": "Lucia Fernandes",
+    "data_de_nascimento": "1982-06-25",
+    "saldo": 3000.0,
+    "transacoes": [
+      {
+        "tipo": "Receita",
+        "data": "07/04/2016",
+        "valor": 700.2,
+        "ID": 213
+      },
+      {
+        "tipo": "Despesa",
+        "data": "07/04/2016",
+        "valor": 120.0,
+        "ID": 214
+      },
+      {
+        "tipo": "Receita",
+        "data": "20/09/2018",
+        "valor": 900.0,
+        "ID": 215
+      }
+    ]
+  }  
+]

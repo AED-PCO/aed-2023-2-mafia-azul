@@ -25,8 +25,8 @@ namespace Renda_Familiar
         {
             if (textBox1.Text.Length > 0 && textBox2.Text.Length > 0 && textBox3.Text.Length > 0 && textBox4.Text.Length > 0 && textBox5.Text.Length > 0)
             {
-                string caminho = "E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.json";
-                string Json = File.ReadAllText("E:\\Trabalhos Puc\\aed-2023-2-mafia-azul\\src\\Renda_Familiar\\Renda_Familiar\\Banco\\Usuarios.json");
+                Caminho caminho = new Caminho();
+                string Json = File.ReadAllText(caminho.geraCaminho());
                 //Transforma string em json
                 List<Usuarios> usu = JsonConvert.DeserializeObject<List<Usuarios>>(Json);
 
@@ -42,7 +42,7 @@ namespace Renda_Familiar
                 Json = "";
                 Json = JsonConvert.SerializeObject(usu);
 
-                File.WriteAllText(caminho, Json);
+                File.WriteAllText(caminho.geraCaminho(), Json);
 
                 MessageBox.Show("Cadastro Efetuado com sucesso! Faça login para continuar!", "Sucesso", MessageBoxButtons.OK);
                 this.Hide();

@@ -46,11 +46,13 @@
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
+            listBox1 = new ListBox();
             modoNoturno = new CheckBox();
             linkLabel1 = new LinkLabel();
             label9 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
             SuspendLayout();
             // 
             // label2
@@ -154,6 +156,10 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(226, 30);
             textBox1.TabIndex = 11;
+            textBox1.Text = "00.00";
+            textBox1.TextAlign = HorizontalAlignment.Right;
+            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.KeyPress += textBox1_KeyPress;
             // 
             // radioButton1
             // 
@@ -167,6 +173,7 @@
             radioButton1.TabStop = true;
             radioButton1.Text = "Débito";
             radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // radioButton2
             // 
@@ -180,6 +187,7 @@
             radioButton2.TabStop = true;
             radioButton2.Text = "Crédito";
             radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // label10
             // 
@@ -205,6 +213,7 @@
             button1.TabIndex = 15;
             button1.Text = "Enviar";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // groupBox1
             // 
@@ -239,14 +248,27 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(listBox1);
             groupBox3.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox3.ForeColor = SystemColors.ControlLightLight;
-            groupBox3.Location = new Point(23, 395);
+            groupBox3.Location = new Point(23, 441);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(1018, 225);
             groupBox3.TabIndex = 22;
             groupBox3.TabStop = false;
             groupBox3.Text = "Extrato";
+            // 
+            // listBox1
+            // 
+            listBox1.BackColor = SystemColors.Desktop;
+            listBox1.BorderStyle = BorderStyle.None;
+            listBox1.ForeColor = Color.White;
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 23;
+            listBox1.Location = new Point(6, 29);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(1006, 184);
+            listBox1.TabIndex = 0;
             // 
             // modoNoturno
             // 
@@ -266,12 +288,13 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel1.Location = new Point(23, 782);
+            linkLabel1.Location = new Point(23, 778);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(37, 21);
             linkLabel1.TabIndex = 24;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Sair";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label9
             // 
@@ -307,6 +330,7 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -331,5 +355,6 @@
         public CheckBox modoNoturno;
         private LinkLabel linkLabel1;
         private Label label9;
+        private ListBox listBox1;
     }
 }
