@@ -13,15 +13,15 @@ namespace Renda_Familiar
         public string usuario { get; set; }
         public string nome { get; set; }
         public string data_de_nascimento { get; set; }
-        public float saldo { get; set; }
-        public List<Transacao> transacoes { get; set; }
+        public Decimal saldo { get; set; }
+        public List<Transacao> transacoes { get; set; } = new List<Transacao>();
     }
     public class Transacao
     {
-        public string tipo;
-        public string data;
-        public float valor;
-        public int ID;
+        public string tipo { get; set; }
+        public string data { get; set; }
+        public decimal valor { get; set; }
+        public int ID { get; set; }
     }
     public class Caminho
     {

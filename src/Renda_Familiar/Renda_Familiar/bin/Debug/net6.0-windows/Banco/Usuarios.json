@@ -5,7 +5,7 @@
     "usuario": "teste",
     "nome": "Pedro Machado",
     "data_de_nascimento": "1988-12-05",
-    "saldo": 1200.0,
+    "saldo": 0,
     "transacoes": [
       {
         "tipo": "Receita",
