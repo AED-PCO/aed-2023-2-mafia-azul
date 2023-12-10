@@ -27,6 +27,7 @@ namespace Renda_Familiar
     {
         public string geraCaminho()
         {
+            //mudado o endereço da pasta do json
             string caminhoArquivo = "Banco\\Usuarios.json";
             string caminhoCompleto = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, caminhoArquivo);
 
