@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,15 @@ namespace Renda_Familiar.Classes
 {
     public class Caminho
     {
+        public void gravaArquivo(List<Usuarios> usu)
+        {
+            Caminho caminho = new Caminho();
+
+            string Json = "";
+            Json = JsonConvert.SerializeObject(usu);
+
+            File.WriteAllText(caminho.geraCaminho(), Json);
+        }
         public string geraCaminho()
         {
             //mudado o endereço da pasta do json

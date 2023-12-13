@@ -80,10 +80,13 @@ namespace Renda_Familiar
                 {
                     Usuarios usuarioCerto = usuario;
                     aces = true;
-                    MessageBox.Show("Login Efetuado com sucesso!", "Sucesso", MessageBoxButtons.OK);
+
                     this.Hide();
+                    MessageBox.Show("Login Efetuado com sucesso!", "Sucesso", MessageBoxButtons.OK);
                     Form1 form1 = new Form1(usu, usuarioCerto);
                     form1.Show();
+
+                    break;
                 }
             }
             if (!aces)

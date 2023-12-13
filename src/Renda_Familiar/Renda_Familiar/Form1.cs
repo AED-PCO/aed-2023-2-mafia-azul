@@ -1,24 +1,29 @@
+using Newtonsoft.Json;
 using Renda_Familiar.Classes;
 
 namespace Renda_Familiar
 {
     public partial class Form1 : Form
     {
-        public void setValores(List<Usuarios> usu, Usuarios u)
-        {
-            List<Usuarios> uList = usu;
-            Usuarios usua = u;
-        }
+        public List<Usuarios> usu;
+        public Usuarios u;
+        Caminho caminho = new Caminho();
+
         public Form1(List<Usuarios> usu, Usuarios u)
         {
+            this.usu = usu;
+            this.u = u;
+
+            this.usu.Remove(u);
+
             InitializeComponent();
-            atualizaValores(u);
+            atualizaValores();
             //Criar uma pasta para as classes e colocar cada uma em um arquivo
         }
 
-        public void atualizaValores(Usuarios u)
+        public void atualizaValores()
         {
-            label9.Text = "Bem vindo (a)" + u.nome;
+            label9.Text = "Bem vindo (a)" + this.u.nome;
             Decimal saldoAtual = 0;
             Decimal totalEntrada = 0;
             Decimal totalSaida = 0;
@@ -39,9 +44,11 @@ namespace Renda_Familiar
             label7.Text = "R$" + totalEntrada.ToString();
             label8.Text = "R$" + totalSaida.ToString();
             label6.Text = "R$" + (totalEntrada - totalSaida).ToString();
-            u.saldo = totalEntrada - totalSaida;
+            this.u.saldo = totalEntrada - totalSaida;
 
-            dataGridView1.DataSource = u.transacoes;
+            //caminho.gravaArquivo();
+
+            dataGridView1.DataSource = this.u.transacoes;
         }
         #region eventos
         private void button1_Click(object sender, EventArgs e)
@@ -140,7 +147,6 @@ namespace Renda_Familiar
             if ((radioButton1.Checked || radioButton2.Checked) && textBox1.TextLength > 0)
             {
                 string data = DateTime.Now.ToString("yyyy-MM-dd");
-                Usuarios u = new Usuarios();
                 Transacao tran = new Transacao();
 
                 if (radioButton1.Checked)
@@ -155,8 +161,8 @@ namespace Renda_Familiar
                 tran.data = data;
                 tran.ID = 123;
 
-                u.transacoes.Add(tran);
-                atualizaValores(u);
+                this.u.transacoes.Add(tran);
+                atualizaValores();
             }
             else
             {
@@ -176,6 +182,14 @@ namespace Renda_Familiar
             {
                 e.Handled = true;
             }
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.usu.Add(u);
+            caminho.gravaArquivo(this.usu);
+
+            this.Close();
         }
     }
 }

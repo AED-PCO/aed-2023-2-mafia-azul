@@ -58,7 +58,7 @@
             groupBox1.Controls.Add(textBox1);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(label10);
-            groupBox1.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            groupBox1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             groupBox1.ForeColor = SystemColors.ControlLightLight;
             groupBox1.Location = new Point(136, 68);
             groupBox1.Name = "groupBox1";
@@ -69,6 +69,7 @@
             // 
             // textBox5
             // 
+            textBox5.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox5.Location = new Point(224, 186);
             textBox5.Multiline = true;
             textBox5.Name = "textBox5";
@@ -79,16 +80,17 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = SystemColors.InactiveCaptionText;
-            label4.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(38, 186);
             label4.Name = "label4";
-            label4.Size = new Size(42, 19);
+            label4.Size = new Size(44, 20);
             label4.TabIndex = 22;
             label4.Text = "CPF:";
             // 
             // textBox4
             // 
+            textBox4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox4.Location = new Point(224, 152);
             textBox4.Multiline = true;
             textBox4.Name = "textBox4";
@@ -97,6 +99,7 @@
             // 
             // textBox3
             // 
+            textBox3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.Location = new Point(224, 120);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
@@ -107,11 +110,11 @@
             // 
             label3.AutoSize = true;
             label3.BackColor = SystemColors.InactiveCaptionText;
-            label3.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.ButtonHighlight;
             label3.Location = new Point(38, 152);
             label3.Name = "label3";
-            label3.Size = new Size(155, 19);
+            label3.Size = new Size(156, 20);
             label3.TabIndex = 20;
             label3.Text = "Data de nascimento:";
             // 
@@ -119,16 +122,17 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = SystemColors.InactiveCaptionText;
-            label2.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(38, 120);
             label2.Name = "label2";
-            label2.Size = new Size(55, 19);
+            label2.Size = new Size(55, 20);
             label2.TabIndex = 18;
             label2.Text = "Nome:";
             // 
             // textBox2
             // 
+            textBox2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.Location = new Point(224, 84);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
@@ -140,16 +144,17 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.InactiveCaptionText;
-            label1.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(38, 84);
             label1.Name = "label1";
-            label1.Size = new Size(58, 19);
+            label1.Size = new Size(60, 20);
             label1.TabIndex = 16;
             label1.Text = "Senha:";
             // 
             // textBox1
             // 
+            textBox1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.Location = new Point(224, 46);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -160,7 +165,7 @@
             // 
             button1.BackColor = Color.White;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Roboto", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.Black;
             button1.Location = new Point(155, 233);
             button1.Name = "button1";
@@ -174,11 +179,11 @@
             // 
             label10.AutoSize = true;
             label10.BackColor = SystemColors.InactiveCaptionText;
-            label10.Font = new Font("Roboto", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label10.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label10.ForeColor = SystemColors.ButtonHighlight;
             label10.Location = new Point(38, 46);
             label10.Name = "label10";
-            label10.Size = new Size(67, 19);
+            label10.Size = new Size(68, 20);
             label10.TabIndex = 14;
             label10.Text = "Usuario:";
             // 
@@ -206,6 +211,7 @@
             linkLabel1.TabIndex = 26;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Voltar ao login";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // Cadastro
             // 

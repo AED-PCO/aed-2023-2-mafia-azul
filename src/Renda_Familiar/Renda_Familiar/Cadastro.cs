@@ -40,12 +40,9 @@ namespace Renda_Familiar
                 u.saldo = 0;
                 usu.Add(u);
 
-                Json = "";
-                Json = JsonConvert.SerializeObject(usu);
+                //Grava a lista no Json
+                caminho.gravaArquivo(usu);
 
-                File.WriteAllText(caminho.geraCaminho(), Json);
-
-                MessageBox.Show("Cadastro Efetuado com sucesso! Faça login para continuar!", "Sucesso", MessageBoxButtons.OK);
                 this.Hide();
                 Login login = new();
                 login.Show();
@@ -97,6 +94,13 @@ namespace Renda_Familiar
         private void Cadastro_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
         }
     }
 }
