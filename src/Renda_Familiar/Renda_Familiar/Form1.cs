@@ -1,12 +1,19 @@
+using Renda_Familiar.Classes;
+
 namespace Renda_Familiar
 {
     public partial class Form1 : Form
     {
+        public void setValores(List<Usuarios> usu, Usuarios u)
+        {
+            List<Usuarios> uList = usu;
+            Usuarios usua = u;
+        }
         public Form1(List<Usuarios> usu, Usuarios u)
         {
             InitializeComponent();
-
             atualizaValores(u);
+            //Criar uma pasta para as classes e colocar cada uma em um arquivo
         }
 
         public void atualizaValores(Usuarios u)
@@ -16,10 +23,8 @@ namespace Renda_Familiar
             Decimal totalEntrada = 0;
             Decimal totalSaida = 0;
 
-            listBox1.Items.Add("|     ID     | ------- |      TIPO       | -------- |        DATA       | --------------- |       VALOR      |");
             foreach (Transacao tra in u.transacoes)
             {
-                listBox1.Items.Add("|    " + tra.ID.ToString() + "   |         |      " + tra.tipo.ToString() + "   |           |     " + tra.data.ToString() + "   |   " + tra.valor.ToString() + "    |");
                 if (tra.tipo == "Receita")
                 {
                     totalEntrada += tra.valor;
@@ -35,8 +40,10 @@ namespace Renda_Familiar
             label8.Text = "R$" + totalSaida.ToString();
             label6.Text = "R$" + (totalEntrada - totalSaida).ToString();
             u.saldo = totalEntrada - totalSaida;
+
+            dataGridView1.DataSource = u.transacoes;
         }
-        #region FuncoesInuteis
+        #region eventos
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -156,7 +163,7 @@ namespace Renda_Familiar
                 MessageBox.Show("Não é possível fazer uma transação sem selecionar um tipo ou digitar um valor", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))

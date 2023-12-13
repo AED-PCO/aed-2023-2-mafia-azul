@@ -45,14 +45,14 @@
             button1 = new Button();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
-            groupBox3 = new GroupBox();
-            listBox1 = new ListBox();
             modoNoturno = new CheckBox();
             linkLabel1 = new LinkLabel();
             label9 = new Label();
+            dataGridView1 = new DataGridView();
+            label11 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -246,30 +246,6 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Operações";
             // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(listBox1);
-            groupBox3.Font = new Font("Roboto", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            groupBox3.ForeColor = SystemColors.ControlLightLight;
-            groupBox3.Location = new Point(23, 441);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(1018, 225);
-            groupBox3.TabIndex = 22;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Extrato";
-            // 
-            // listBox1
-            // 
-            listBox1.BackColor = SystemColors.Desktop;
-            listBox1.BorderStyle = BorderStyle.None;
-            listBox1.ForeColor = Color.White;
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 23;
-            listBox1.Location = new Point(6, 29);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(1006, 184);
-            listBox1.TabIndex = 0;
-            // 
             // modoNoturno
             // 
             modoNoturno.AutoSize = true;
@@ -307,16 +283,39 @@
             label9.TabIndex = 25;
             label9.Text = "Bem vindo Matheus Canuto!";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.BackgroundColor = Color.Black;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.GridColor = Color.White;
+            dataGridView1.Location = new Point(23, 468);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(503, 121);
+            dataGridView1.TabIndex = 26;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Roboto", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(23, 401);
+            label11.Name = "label11";
+            label11.Size = new Size(242, 29);
+            label11.TabIndex = 27;
+            label11.Text = "Lista de transações";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1053, 813);
+            Controls.Add(label11);
+            Controls.Add(dataGridView1);
             Controls.Add(label9);
             Controls.Add(linkLabel1);
             Controls.Add(modoNoturno);
-            Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label6);
@@ -330,7 +329,7 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -351,10 +350,10 @@
         private Button button1;
         private GroupBox groupBox1;
         private GroupBox groupBox2;
-        private GroupBox groupBox3;
         public CheckBox modoNoturno;
         private LinkLabel linkLabel1;
         private Label label9;
-        private ListBox listBox1;
+        private DataGridView dataGridView1;
+        private Label label11;
     }
 }
