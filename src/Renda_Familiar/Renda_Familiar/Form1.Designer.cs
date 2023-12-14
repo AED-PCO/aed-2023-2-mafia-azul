@@ -262,9 +262,10 @@
             label14.ForeColor = Color.SpringGreen;
             label14.Location = new Point(74, 282);
             label14.Name = "label14";
-            label14.Size = new Size(101, 29);
+            label14.Size = new Size(162, 29);
             label14.TabIndex = 12;
-            label14.Text = "R$10:00";
+            label14.Text = "Sem entradas";
+            label14.Click += label14_Click;
             // 
             // label15
             // 
@@ -273,9 +274,9 @@
             label15.ForeColor = Color.Red;
             label15.Location = new Point(313, 282);
             label15.Name = "label15";
-            label15.Size = new Size(101, 29);
+            label15.Size = new Size(139, 29);
             label15.TabIndex = 13;
-            label15.Text = "R$10:00";
+            label15.Text = "Sem saidas";
             // 
             // label12
             // 

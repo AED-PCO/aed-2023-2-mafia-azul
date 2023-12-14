@@ -66,8 +66,14 @@ namespace Renda_Familiar
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            label14.Text = "R$" + arvoreBinaria.achaMaior().ToString();
-            label15.Text = "R$" + arvoreBinaria.achaMenor().ToString();
+            if (u.transacoes.Count > 0)
+            {
+                if (arvoreBinaria.achaMenor() > 0)
+                    label14.Text = "R$" + arvoreBinaria.achaMaior().ToString();
+                //Só é um crédito se for menor do que zero
+                if (arvoreBinaria.achaMenor() < 0)
+                    label15.Text = "R$" + arvoreBinaria.achaMenor().ToString();
+            }
         }
         #region eventos
         private void button1_Click(object sender, EventArgs e)
@@ -181,8 +187,11 @@ namespace Renda_Familiar
 
                 this.u.transacoes.Add(tran);
 
-                label14.Text = "R$" + arvoreBinaria.achaMaior().ToString();
-                label15.Text = "R$" + arvoreBinaria.achaMenor().ToString();
+                if (arvoreBinaria.achaMenor() > 0)
+                    label14.Text = "R$" + arvoreBinaria.achaMaior().ToString();
+                //Só é um crédito se for menor do que zero
+                if (arvoreBinaria.achaMenor() < 0)
+                    label15.Text = "R$" + arvoreBinaria.achaMenor().ToString();
 
                 atualizaValores();
             }
@@ -215,6 +224,11 @@ namespace Renda_Familiar
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }
