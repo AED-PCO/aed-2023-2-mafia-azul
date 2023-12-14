@@ -8,13 +8,26 @@ namespace Renda_Familiar
         public List<Usuarios> usu;
         public Usuarios u;
         Caminho caminho = new Caminho();
-
+        BinaryTree arvoreBinaria = new BinaryTree();
+        Ordenacoes ordena = new Ordenacoes();
         public Form1(List<Usuarios> usu, Usuarios u)
         {
             this.usu = usu;
             this.u = u;
 
             this.usu.Remove(u);
+
+            foreach (Transacao tran in u.transacoes)
+            {
+                if (tran.tipo == "Receita")
+                {
+                    arvoreBinaria.Insert(tran.valor);
+                }
+                else
+                {
+                    arvoreBinaria.Insert(-tran.valor);
+                }
+            }
 
             InitializeComponent();
             atualizaValores();
@@ -47,8 +60,14 @@ namespace Renda_Familiar
             this.u.saldo = totalEntrada - totalSaida;
 
             //caminho.gravaArquivo();
-
-            dataGridView1.DataSource = this.u.transacoes;
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ordena.OrdenaTransacaoPorData(this.u.transacoes);
+            dataGridView1.Refresh();
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label14.Text = "R$" + arvoreBinaria.achaMaior().ToString();
+            label15.Text = "R$" + arvoreBinaria.achaMenor().ToString();
         }
         #region eventos
         private void button1_Click(object sender, EventArgs e)
@@ -56,10 +75,6 @@ namespace Renda_Familiar
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -149,19 +164,26 @@ namespace Renda_Familiar
                 string data = DateTime.Now.ToString("yyyy-MM-dd");
                 Transacao tran = new Transacao();
 
-                if (radioButton1.Checked)
-                {
-                    tran.tipo = "Receita";
-                }
-                else
-                {
-                    tran.tipo = "Despesa";
-                }
                 tran.valor = Convert.ToDecimal(textBox1.Text);
                 tran.data = data;
                 tran.ID = 123;
 
+                if (radioButton1.Checked)
+                {
+                    tran.tipo = "Receita";
+                    arvoreBinaria.Insert(+tran.valor);
+                }
+                else
+                {
+                    tran.tipo = "Despesa";
+                    arvoreBinaria.Insert(-tran.valor);
+                }
+
                 this.u.transacoes.Add(tran);
+
+                label14.Text = "R$" + arvoreBinaria.achaMaior().ToString();
+                label15.Text = "R$" + arvoreBinaria.achaMenor().ToString();
+
                 atualizaValores();
             }
             else
@@ -190,6 +212,11 @@ namespace Renda_Familiar
             caminho.gravaArquivo(this.usu);
 
             this.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

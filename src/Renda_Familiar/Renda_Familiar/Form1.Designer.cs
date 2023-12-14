@@ -45,6 +45,10 @@
             button1 = new Button();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
+            label14 = new Label();
+            label15 = new Label();
+            label12 = new Label();
+            label13 = new Label();
             modoNoturno = new CheckBox();
             linkLabel1 = new LinkLabel();
             label9 = new Label();
@@ -72,11 +76,11 @@
             // 
             label1.AutoSize = true;
             label1.BackColor = SystemColors.InactiveCaptionText;
-            label1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(38, 59);
+            label1.Location = new Point(38, 73);
             label1.Name = "label1";
-            label1.Size = new Size(151, 26);
+            label1.Size = new Size(187, 31);
             label1.TabIndex = 3;
             label1.Text = "Total entrada";
             label1.Click += label1_Click;
@@ -96,11 +100,11 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = SystemColors.InactiveCaptionText;
-            label4.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(287, 59);
+            label4.Location = new Point(287, 73);
             label4.Name = "label4";
-            label4.Size = new Size(128, 26);
+            label4.Size = new Size(158, 31);
             label4.TabIndex = 5;
             label4.Text = "Total saída";
             // 
@@ -131,22 +135,22 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label7.ForeColor = Color.SpringGreen;
-            label7.Location = new Point(73, 96);
+            label7.Location = new Point(74, 125);
             label7.Name = "label7";
-            label7.Size = new Size(78, 24);
+            label7.Size = new Size(101, 29);
             label7.TabIndex = 8;
             label7.Text = "R$10:00";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label8.ForeColor = Color.Red;
-            label8.Location = new Point(312, 96);
+            label8.Location = new Point(313, 125);
             label8.Name = "label8";
-            label8.Size = new Size(78, 24);
+            label8.Size = new Size(101, 29);
             label8.TabIndex = 9;
             label8.Text = "R$10:00";
             label8.Click += label8_Click;
@@ -234,6 +238,10 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(label14);
+            groupBox2.Controls.Add(label15);
+            groupBox2.Controls.Add(label12);
+            groupBox2.Controls.Add(label13);
             groupBox2.Controls.Add(label1);
             groupBox2.Controls.Add(label7);
             groupBox2.Controls.Add(label8);
@@ -242,10 +250,56 @@
             groupBox2.ForeColor = SystemColors.ControlLightLight;
             groupBox2.Location = new Point(558, 186);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(483, 189);
+            groupBox2.Size = new Size(483, 403);
             groupBox2.TabIndex = 21;
             groupBox2.TabStop = false;
             groupBox2.Text = "Operações";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label14.ForeColor = Color.SpringGreen;
+            label14.Location = new Point(74, 282);
+            label14.Name = "label14";
+            label14.Size = new Size(101, 29);
+            label14.TabIndex = 12;
+            label14.Text = "R$10:00";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.ForeColor = Color.Red;
+            label15.Location = new Point(313, 282);
+            label15.Name = "label15";
+            label15.Size = new Size(101, 29);
+            label15.TabIndex = 13;
+            label15.Text = "R$10:00";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = SystemColors.InactiveCaptionText;
+            label12.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.ForeColor = SystemColors.ButtonHighlight;
+            label12.Location = new Point(38, 227);
+            label12.Name = "label12";
+            label12.Size = new Size(193, 31);
+            label12.TabIndex = 10;
+            label12.Text = "Maior entrada";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = SystemColors.InactiveCaptionText;
+            label13.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = SystemColors.ButtonHighlight;
+            label13.Location = new Point(287, 227);
+            label13.Name = "label13";
+            label13.Size = new Size(164, 31);
+            label13.TabIndex = 11;
+            label13.Text = "Maior saida";
             // 
             // modoNoturno
             // 
@@ -294,6 +348,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(503, 121);
             dataGridView1.TabIndex = 26;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label11
             // 
@@ -310,7 +365,7 @@
             // 
             linkLabel3.AutoSize = true;
             linkLabel3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel3.Location = new Point(977, 531);
+            linkLabel3.Location = new Point(520, 663);
             linkLabel3.Name = "linkLabel3";
             linkLabel3.Size = new Size(44, 25);
             linkLabel3.TabIndex = 29;
@@ -323,7 +378,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1053, 581);
+            ClientSize = new Size(1053, 758);
             Controls.Add(linkLabel3);
             Controls.Add(label11);
             Controls.Add(dataGridView1);
@@ -370,5 +425,9 @@
         private DataGridView dataGridView1;
         private Label label11;
         private LinkLabel linkLabel3;
+        private Label label14;
+        private Label label15;
+        private Label label12;
+        private Label label13;
     }
 }
